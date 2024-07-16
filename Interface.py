@@ -7,7 +7,8 @@ def click():
     print ("You clicked the button", count, "times")
 
 window = Tk()
-window.geometry('1000x1000')
+
+window.geometry('1080x1080')
 window.title("My First GUI")
 
 icon = PhotoImage(file = "img.png")
@@ -16,7 +17,7 @@ window.iconphoto(True, icon)
 photo = PhotoImage(file = "img_1.png")
 
 label = Label(window, text = "Hello World",
-              font = ("Arial", 30, 'bold'),
+              font = ("Arial", 20, 'bold'),
               fg = "blue",
               relief = RAISED,
               bd = 10,
@@ -40,10 +41,5 @@ button = Button(window,
                 image = photo1,
                 compound = "bottom")
 button.pack()
-
-entry = Entry(window,
-              font= ("arial", 15))
-
-entry.pack(side = LEFT)
 
 window.mainloop()
