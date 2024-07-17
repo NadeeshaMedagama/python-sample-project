@@ -11,10 +11,10 @@ window = Tk()
 window.geometry('1080x1080')
 window.title("My First GUI")
 
-icon = PhotoImage(file = "img.png")
+icon = PhotoImage(file ="img.png")
 window.iconphoto(True, icon)
 
-photo = PhotoImage(file = "img_1.png")
+photo = PhotoImage(file ="img_1.png")
 
 label = Label(window, text = "Hello World",
               font = ("Arial", 20, 'bold'),
@@ -28,7 +28,7 @@ label = Label(window, text = "Hello World",
 
 label.pack()
 
-photo1 = PhotoImage(file = "img_3.png")
+photo1 = PhotoImage(file ="img_3.png")
 
 button = Button(window,
                 text = "Click Me!",

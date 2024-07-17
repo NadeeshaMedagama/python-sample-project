@@ -64,7 +64,7 @@ backspace = Button(window,
 backspace.pack()
 
 x = IntVar()
-photo2 = PhotoImage(file = "img_5.png")
+photo2 = PhotoImage(file ="img_5.png")
 
 check = Checkbutton(window,
                     text = "I Agree to this!",

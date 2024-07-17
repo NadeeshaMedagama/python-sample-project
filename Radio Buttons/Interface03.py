@@ -14,9 +14,9 @@ def order():
 
 window = Tk()
 
-photo1= PhotoImage(file = "img_6.png")
-photo2= PhotoImage(file = "img_7.png")
-photo3= PhotoImage(file = "img_8.png")
+photo1= PhotoImage(file ="img_6.png")
+photo2= PhotoImage(file ="img_7.png")
+photo3= PhotoImage(file ="img_8.png")
 
 foodImages = [photo1, photo2, photo3]
 
