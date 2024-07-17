@@ -12,6 +12,12 @@ def delete():
 def backspace():
     entry.delete(len(entry.get())-1, END)
 
+def display():
+    if(x.get() == 1):
+        print ("You are Agreed!")
+    else:
+        print("You are Not Agreed!")
+
 window = Tk()
 
 window.geometry('500x500')
@@ -56,5 +62,25 @@ backspace = Button(window,
                    height=2)
 
 backspace.pack()
+
+x = IntVar()
+photo2 = PhotoImage(file = "img_5.png")
+
+check = Checkbutton(window,
+                    text = "I Agree to this!",
+                    font = ("arial", 15),
+                    variable = x,
+                    onvalue= 1,
+                    offvalue = 0,
+                    command = display,
+                    fg = "blue",
+                    bg = "lightgreen",
+                    activeforeground="blue",
+                    activebackground="lightgreen",
+                    image = photo2,
+                    compound = "left")
+
+
+check.pack()
 
 window.mainloop()
