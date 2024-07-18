@@ -19,16 +19,23 @@ def submit():
 
 def add():
 
-    print("You Added: ", listbox.insert(listbox.size(), entryBox.get()))
+    item = entryBox.get()
+    listbox.insert(listbox.size(), item)
+    print("You Added : ", item)
 
     listbox.config(height=listbox.size())
 
 def delete():
 
-    for index in reversed(listbox.curselection()):
-        listbox.delete(index)
+    selectitems = listbox.curselection()
+    if not selectitems :
+        print("No Selected Items!")
+        return
 
-    print("You Deleted :")
+    for index in reversed(selectitems):
+        items = listbox.get(index)
+        listbox.delete(index)
+        print("You Deleted : ", items)
 
     listbox.config(height=listbox.size())
 
