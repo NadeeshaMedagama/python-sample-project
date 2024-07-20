@@ -3,9 +3,9 @@ from tkinter import colorchooser
 
 def click():
     color = colorchooser.askcolor()
-    print(color)
+    print("You added RGB color code is : ", color)
     colorHex = color[1]
-    print(colorHex)
+    print("You added color code is : ", colorHex)
     window.config(bg = colorHex)
 
 window = Tk()
